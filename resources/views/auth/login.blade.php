@@ -15,7 +15,7 @@
             <form class="form-horizontal" action="{{route('login')}}" method="post">
                 @csrf
                 <fieldset class="form-group floating-label-form-group">
-                    <label for="email">Your Email123</label>
+                    <label for="email">Your Email</label>
                     <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="Your Email">
                     @error('email')
                         <span class="invalid-feedback" role="alert">
