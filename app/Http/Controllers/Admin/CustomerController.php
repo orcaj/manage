@@ -78,6 +78,9 @@ class CustomerController extends Controller
         $customer->username=$request->username;
         $customer->address=$request->address;
         $customer->phone_number=$request->phone_number;
+        $customer->number=$request->number;
+        $customer->city=$request->city;
+        $customer->cpf_cnpj=$request->cpf_cnpj;
         $customer->save();
         return redirect()->route('admin-customer.index')->with('success','update_sucess');
     }

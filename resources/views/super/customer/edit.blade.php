@@ -34,37 +34,59 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput3">Username</label>
+                                                        <label class="col-md-3 label-control" for="userinput3">Nome</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" value="{{$result->username}}" id="username" class="form-control border-primary" placeholder="Username" name="username" required data-validation-required-message="This field is required">
+                                                            <input type="text" value="{{$result->username}}"  id="username" class="form-control border-primary" placeholder="Nome" name="username" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput4">Address</label>
+                                                        <label class="col-md-3 label-control" for="userinput4">Endereço</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" value="{{$result->address}}"  id="address" class="form-control border-primary" placeholder="Address" name="address" required data-validation-required-message="This field is required">
+                                                            <input type="text" value="{{$result->address}}"  id="address" class="form-control border-primary" placeholder="Endereço" name="address" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <h4 class="form-section"><i class="feather icon-mail"></i> Contact Info & Bio</h4>
-
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <!-- <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput5">Email</label>
-                                                        <div class="col-md-9">
-                                                            <input class="form-control border-primary" type="email" placeholder="email" id="userinput5">
-                                                        </div>
-                                                    </div> -->
-
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput6" required data-validation-required-message="This field is required">Phone Number</label>
+                                                        <label class="col-md-3 label-control" for="userinput3">n°</label>
                                                         <div class="col-md-9">
-                                                            <input class="form-control border-primary" value="{{$result->phone_number}}"   type="text" placeholder="Phone Number" id="phone_number" name="phone_number" required data-validation-required-message="This field is required">
+                                                            <input type="number" value="{{$result->number}}"  id="number" class="form-control border-primary" min="10000" max="99999"  placeholder="n°" name="number" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">Cidade</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" value="{{$result->city}}"  id="city" class="form-control border-primary" placeholder="Cidade" name="city" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput6" required data-validation-required-message="This field is required">Telefone</label>
+                                                        <div class="col-md-9">
+                                                            <input class="form-control border-primary" value="{{$result->phone_number}}"  type="text" placeholder="Telefone" id="phone_number" name="phone_number" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+
+                                                   
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput6" required data-validation-required-message="This field is required">CPF / CNPJ</label>
+                                                        <div class="col-md-9">
+                                                            <input class="form-control border-primary" value="{{$result->cpf_cnpj}}"  type="text" placeholder="CPF / CNPJ" id="cpf_cnpj" minlength="14" maxlength="14" pattern="[0-9]+" name="cpf_cnpj" title="Please input only 14 number" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
 

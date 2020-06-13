@@ -32,7 +32,7 @@
                                             <h4 class="form-section"><i class="fa fa-eye"></i> Product Info</h4>
                                             
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3">Customer Name</label>
                                                         <div class="col-md-9">
@@ -44,44 +44,135 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput4">progress</label>
-                                                        <div class="col-md-9">
-                                                            <input type="number" value="{{$result->progress}}" id="progress" max="100" class="form-control border-primary" placeholder="Progress" name="progress" required data-validation-required-message="This field is required">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    
-
-                                                    <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="status" required data-validation-required-message="This field is required">status</label>
+                                                        <label class="col-md-3 label-control" for="userinput4">Status</label>
                                                         <div class="col-md-9">
                                                             <select class="select2 form-control" name="status">
-                                                                <option value="pending">Pending</option>
-                                                                <option value="completed">Completed</option>
+                                                                <option value="pre-budget">pre-budget</option>
+                                                                <option value="awaiting part">awaiting part</option>
+                                                                <option value="completed">completed</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
 
+                                                <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput5">Product Photo</label>
+                                                        <label class="col-md-3 label-control" for="userinput4">Aparelho</label>
                                                         <div class="col-md-9">
-                                                            <input type="file" class="custom-file-input" id="photo" name="photo">
-                                                            <label class="custom-file-label" for="inputGroupFile01" >Upload Photo</label>
+                                                            <input value="{{$result->equipament}}" type="text" id="equipament" class="form-control border-primary" placeholder="Aparelho" name="equipament" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
-
-                                                   
                                                 </div>
-                                              
+
                                             </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput3">Marca</label>
+                                                        <div class="col-md-9">
+                                                            <input value="{{$result->brand}}"  type="text" id="brand" class="form-control border-primary" placeholder="Marca" name="brand" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">Modelo </label>
+                                                        <div class="col-md-9">
+                                                            <input value="{{$result->model}}"  type="text" id="model" class="form-control border-primary" placeholder="Modelo" name="model" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">Número de Série </label>
+                                                        <div class="col-md-9">
+                                                            <input value="{{$result->serial_number}}"  type="text" id="serial_number"class="form-control border-primary" placeholder="Número de Série" name="serial_number" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicTextarea">Problema relatado</label>
+                                                        <textarea class="form-control" name="defect" rows="3" placeholder="Problema relatado" required data-validation-required-message="This field is required"> {{$result->defect}} </textarea>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                                    <fieldset class="form-group">
+                                                        <label for="placeTextarea">Orçamento</label>
+                                                        <textarea class="form-control" name="description" rows="3" placeholder="Orçamento" required data-validation-required-message="This field is required"> {{$result->description}}</textarea>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                                    <fieldset class="form-group">
+                                                        <label for="descTextarea">Observações</label>
+                                                        <textarea class="form-control" name="observations"  rows="3" placeholder="Observações" required data-validation-required-message="This field is required"> {{$result->observations}} </textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-2 label-control" for="userinput5">Área para inserção de fotos</label>
+                                                <div class="col-md-10">
+                                                    <input type="file" class="custom-file-input form-group" id="photo" name="photo[]"  multiple="">
+                                                    <label class="custom-file-label" for="inputGroupFile01" >Área para inserção de fotos</label>
+                                                </div>
+                                            </div>
+
+
+                                            @if($result->optional == 1)
+                                            <div class="row custom-control custom-checkbox  form-group">
+                                                <div class="col-md-12">
+                                                    <input type="checkbox" class="custom-control-input" name="optional" id="optional" checked="">
+                                                    <label class="custom-control-label" for="optional">Em garantia</label>
+                                                </div>
+                                            </div>
+                                            @else
+                                            <div class="row custom-control custom-checkbox  form-group">
+                                                <div class="col-md-12">
+                                                    <input type="checkbox" class="custom-control-input" name="optional" id="optional">
+                                                    <label class="custom-control-label" for="optional">Em garantia</label>
+                                                </div>
+                                            </div>
+                                            @endif
+
+                                            <div class="row hidden" id="option_fields">
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">NF </label>
+                                                        <div class="col-md-9">
+                                                            <input value="{{$result->numeric_digits}}"  type="text" id="numeric_digits"class="form-control border-primary" placeholder="NF" name="numeric_digits">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">Data de Compra </label>
+                                                        <div class="col-md-9">
+                                                            <input value="{{$result->purchase_date}}"  type="date" id="purchase_date" class="form-control border-primary" placeholder="Data de Compra" name="purchase_date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">Loja </label>
+                                                        <div class="col-md-9">
+                                                            <input value="{{$result->store}}"  type="text" id="store"class="form-control border-primary" placeholder="Loja" name="store">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
 
                                         <div class="form-actions right">
@@ -110,6 +201,22 @@
     status="<?php echo $result->status; ?>";
     $("select[name='customer_id']").val(customer_id);
     $("select[name='status']").val(status);
+    optional="<?php echo $result->optional?>";
+    if(optional == 1){
+        $("#option_fields").removeClass('hidden');
+    }else{
+        $("#option_fields").addClass('hidden');
+    }
+
+    $("#optional").change(function(){
+        flag=$("#optional").prop('checked');
+        if(flag == true){
+            $("#option_fields").removeClass('hidden');
+        }else{
+            $("#option_fields").addClass('hidden');
+        }
+    })
+    
 </script>
 
 

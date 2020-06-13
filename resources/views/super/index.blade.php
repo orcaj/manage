@@ -186,11 +186,12 @@
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Customer Name</th>
-                                                <th>Progress</th>
-                                                <th>Status</th>
                                                 <th>Photo</th>
-                                                <th>Update Date</th>
+                                                <th>Servial Number</th>
+                                                <th>Customer Name</th>
+                                                <th>Subsidary Name</th>
+                                                <th>Status</th>
+                                                <th>Data de Compra</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -198,11 +199,19 @@
                                             @if($key < 10)
                                             <tr>
                                                 <td class="text-truncate">{{$key+1}}</td>
-                                                <td class="text-truncate">{{$value->customer->username?$value->customer->username:''}}</td>
-                                                <td class="text-truncate">{{$value->progress}}</td>
+                                                <td class="text-center">
+                                                        @foreach($value->image as $img)
+                                                            <img src="{{asset($img->photo)}}" width="50">
+                                                        @endforeach
+                                                </td>
+                                                <td>{{$value->serial_number}}</td>
+
+                                                <td class="text-truncate">{{$value->customer->username}}</td>
+                                                <td class="text-truncate">{{$value->subsidiary->name}}</td>
                                                 <td class="text-truncate">{{$value->status}}</td>
-                                                <td class="text-truncate"><img src="{{$value->photo}}" width=40 /> </td>
-                                                <td class="text-truncate">{{date('Y-m-d', strtotime($value->updated_at))}}</td>
+                                                <td>
+                                                        {{$value->purchase_date? date('d/m/Y', strtotime($value->purchase_date)) : ''}}
+                                                </td>
                                                
                                             </tr>
                                             @endif

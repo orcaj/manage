@@ -26,6 +26,8 @@
                                                     <th>Unique Key</th>
                                                     <th>Owner Name</th>
                                                     <th>Owner Email</th>
+                                                    <th>Owner Phone</th>
+                                                    <th>Owner Address</th>
                                                     <th>Total Customer</th>
                                                     <th>Total Product</th>
                                                     <th>Created Date</th>
@@ -38,6 +40,8 @@
                                                     <td class="text-truncate">{{$value->id}}</td>
                                                     <td class="text-truncate">{{$value->name}}</td>
                                                     <td class="text-truncate">{{$value->email}}</td>
+                                                    <td class="text-truncate">{{$value->phone}}</td>
+                                                    <td class="text-truncate">{{$value->address}}</td>
                                                     <td class="text-truncate">{{customer_count($value->id)}}</td>
                                                     <td class="text-truncate">{{product_count($value->id)}}</td>
                                                     <td class="text-truncate">{{date('Y-m-d', strtotime($value->created_at))}}</td>

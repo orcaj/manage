@@ -12,9 +12,9 @@
                     <div class="users-list-table">
                         <div class="card">
                             <div class="card-head">
-                                <div class="col-xl-3 col-lg-12" style="margin-top: 20px; float: right; color:white;">
+                                <!-- <div class="col-xl-3 col-lg-12" style="margin-top: 20px; float: right; color:white;">
                                     <a href="{{route('customer.create')}}" class="btn btn-primary btn-block">Create Customer</a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="card-content">
                                 <div class="card-body">

@@ -49,8 +49,8 @@ class HomeController extends Controller
 
     public function pdf($id){
         // $show = Disneyplus::find($id);
-        $result=Product::Find($id);
-        $pdf = PDF::loadView('file/pdf',compact('result'));
+        $result=Product::FindOrFail($id);
+        $pdf = PDF::loadView('file/pdf',compact('result'))->setPaper('a4');
         
         // return view('file/pdf', compact('result'));
         return $pdf->download('pdf.pdf');

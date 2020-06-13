@@ -11,8 +11,8 @@ $factory->define(Customer::class, function (Faker $faker) {
         'username' => $faker->name(),
         'address' => $faker->address(),
         'phone_number'=>$faker->e164PhoneNumber(),
-        'number'=>$faker->numberBetween(1, 1000),
+        'number'=>$faker->numberBetween(10000, 99999),
         'city'=>$faker->city,
-        'cpf_cnpj'=>$faker->numberBetween(1, 99999999999999),
+        'cpf_cnpj'=>$faker->numberBetween(1, 99999999999999)
     ];
 });

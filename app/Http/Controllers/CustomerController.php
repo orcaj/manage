@@ -48,6 +48,9 @@ class CustomerController extends Controller
         $customer->username=$request->username;
         $customer->address=$request->address;
         $customer->phone_number=$request->phone_number;
+        $customer->number=$request->number;
+        $customer->city=$request->city;
+        $customer->cpf_cnpj=$request->cpf_cnpj;
         $customer->subsidiary_id=auth()->user()->id;
         $customer->save();
         return redirect()->route('customer.index')->with('success','add_success');
@@ -90,6 +93,9 @@ class CustomerController extends Controller
         $customer->username=$request->username;
         $customer->address=$request->address;
         $customer->phone_number=$request->phone_number;
+        $customer->number=$request->number;
+        $customer->city=$request->city;
+        $customer->cpf_cnpj=$request->cpf_cnpj;
         $customer->save();
         return redirect()->route('customer.index')->with('success','update_success');
     }

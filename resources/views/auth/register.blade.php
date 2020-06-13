@@ -22,6 +22,18 @@
                     <label for="user-email">Your Email Address</label>
                     <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="Your Email Address">
                 </fieldset>
+
+                <fieldset class="form-group floating-label-form-group">
+                    <label for="user-address">Your Address</label>
+                    <input type="text" class="form-control @error('address') is-invalid @enderror" id="address" name="address" placeholder="Your Email Address">
+                </fieldset>
+
+                <fieldset class="form-group floating-label-form-group">
+                    <label for="user-phone">Your Phone Number</label>
+                    <input type="text" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone" placeholder="Your Email Address">
+                </fieldset>
+
+
                 <fieldset class="form-group floating-label-form-group mb-1">
                     <label for="user-password">Enter Password</label>
                     <input type="password" class="form-control @error('password') is-invalid @enderror" minlength="6" id="password" name="password" placeholder="Enter Password">

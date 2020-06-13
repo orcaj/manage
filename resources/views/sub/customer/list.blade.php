@@ -23,23 +23,26 @@
                                         <table class="table table-striped table-bordered base-style">
                                             <thead>
                                                 <tr>
-                                                    <th>id</th>
-                                                    <th>username</th>
-                                                    <th>address</th>
-                                                    <th>Phone Number</th>
-                                                    <th>Created Date</th>
-                                                    <th>edit</th>
+                                                    <th>No</th>
+                                                    <th>Nome</th>
+                                                    <th>Endereço</th>
+                                                    <th>n°</th>
+                                                    <th>Cidade</th>
+                                                    <th>Telefone</th>
+                                                    <th>CPF / CNPJ</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                             @foreach($customers as $key =>$value)
                                                 <tr>
                                                     <td>{{$key+1}}</td>
-                                                    <td>{{$value->username}}</a>
-                                                    </td>
+                                                    <td>{{$value->username}}</td>
                                                     <td>{{$value->address}}</td>
+                                                    <td>{{$value->number}}</td>
+                                                    <td>{{$value->city}}</td>
                                                     <td>{{$value->phone_number}}</td>
-                                                    <td>{{date('Y-m-d', strtotime($value->created_at))}}</td>
+                                                    <td>{{$value->cpf_cnpj}}</td>
                                                     <td>
                                                     <form action="{{ route('customer.destroy', $value) }}" method="post" id="userDelf{{$value->id}}">
                                                         @csrf

@@ -17,16 +17,18 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->integer('customer_id');
             $table->integer('subsidiary_id');
-            $table->string('photo');
             $table->string('equipament');
             $table->string('brand');
             $table->string('serial_number');
             $table->text('defect');
             $table->text('description');
             $table->text('observations');
-            $table->string('numeric_digits');
-            $table->string('store');
-            $table->string('purchase_date');
+            $table->boolean('optional');
+            $table->string('numeric_digits')->nullable();
+            $table->string('store')->nullable();
+            $table->string('status');
+            $table->string('model');
+            $table->string('purchase_date')->nullable();
             $table->timestamps();
         });
     }
