@@ -1,0 +1,6 @@
+[12-Jun-2020 11:06:14] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home1/virtu817/public_html/manage/artisan on line 33
+[12-Jun-2020 11:06:14] PHP Parse error:  syntax error, unexpected T_STRING in /home1/virtu817/public_html/manage/artisan on line 33
+[12-Jun-2020 11:06:24] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home1/virtu817/public_html/manage/artisan on line 33
+[12-Jun-2020 11:06:24] PHP Parse error:  syntax error, unexpected T_STRING in /home1/virtu817/public_html/manage/artisan on line 33
+[12-Jun-2020 11:10:23] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home1/virtu817/public_html/manage/artisan on line 33
+[12-Jun-2020 11:10:23] PHP Parse error:  syntax error, unexpected T_STRING in /home1/virtu817/public_html/manage/artisan on line 33
