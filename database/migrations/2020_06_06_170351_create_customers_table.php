@@ -20,6 +20,9 @@ class CreateCustomersTable extends Migration
             $table->string('username');
             $table->string('address');
             $table->string('phone_number');
+            $table->integer('number');
+            $table->string('city');
+            $table->string('cpf_cnpj');
             $table->timestamps();
         });
     }

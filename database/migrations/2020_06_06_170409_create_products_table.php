@@ -17,9 +17,16 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->integer('customer_id');
             $table->integer('subsidiary_id');
-            $table->double('progress');
-            $table->string('status');
             $table->string('photo');
+            $table->string('equipament');
+            $table->string('brand');
+            $table->string('serial_number');
+            $table->text('defect');
+            $table->text('description');
+            $table->text('observations');
+            $table->string('numeric_digits');
+            $table->string('store');
+            $table->string('purchase_date');
             $table->timestamps();
         });
     }
