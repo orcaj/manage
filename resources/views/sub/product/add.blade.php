@@ -35,7 +35,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3">Customer Name</label>
                                                         <div class="col-md-9">
-                                                            <select class="select2 form-control" name="customer_id">
+                                                            <select class="select2 form-control" name="customer_id" required="">
                                                                 @foreach($customers as $customer)
                                                                     <option value="{{$customer->id}}">{{$customer->username}}</option>
                                                                 @endforeach
@@ -47,7 +47,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput4">Status</label>
                                                         <div class="col-md-9">
-                                                            <select class="select2 form-control" name="status">
+                                                            <select class="select2 form-control" name="status" required="">
                                                                 <option value="pre-budget">pre-budget</option>
                                                                 <option value="awaiting part">awaiting part</option>
                                                                 <option value="completed">completed</option>
