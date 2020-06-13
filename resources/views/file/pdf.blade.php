@@ -159,7 +159,7 @@
         </div>
 
 
-        <hr style="color: black; height: 2px; background: black; margin-top: 10px;">
+        <hr style="color: black; height: 2px; background: black; ">
         <div>
             <table>
                 <tr>

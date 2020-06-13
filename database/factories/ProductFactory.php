@@ -9,7 +9,7 @@ use App\Product;
 
 $factory->define(Product::class, function (Faker $faker) {
     return [
-        'customer_id' => $faker->numberBetween(1,50),
+        'customer_id' => $faker->numberBetween(1,5),
         'subsidiary_id'=>$faker->numberBetween(2,4),
         'equipament' =>$faker->word,
         'brand' =>$faker->word,
