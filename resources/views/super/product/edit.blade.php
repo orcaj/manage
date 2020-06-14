@@ -49,9 +49,18 @@
                                                         <label class="col-md-3 label-control" for="userinput4">Status</label>
                                                         <div class="col-md-9">
                                                             <select class="select2 form-control" name="status">
-                                                                <option value="pre-budget">pre-budget</option>
-                                                                <option value="awaiting part">awaiting part</option>
-                                                                <option value="completed">completed</option>
+                                                                <option value="Entrada">Entrada</option>
+                                                                <option value="Em Análise">Em Análise</option>
+                                                                <option value="Aguardando Resposta">Aguardando Resposta</option>
+                                                                <option value="Orçamento Aprovado">Orçamento Aprovado</option>
+                                                                <option value="Aguardando Peça">Aguardando Peça</option>
+                                                                <option value="Pronto">Pronto</option>
+                                                                <option value="Finalizado">Finalizado</option>
+                                                                <option value="Garantia">Garantia</option>
+
+                                                                <option value="Garantia Aguardando Peça">Garantia Aguardando Peça</option>
+                                                                <option value="Devolução">Devolução</option>
+                                                                <option value="Orçamento Rejeitado">Orçamento Rejeitado</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -198,6 +207,7 @@
 <!-- END: Content-->
 <script>
     customer_id="<?php echo $result->customer_id; ?>";
+    console.log("fff",customer_id);
     status="<?php echo $result->status; ?>";
     $("select[name='customer_id']").val(customer_id);
     $("select[name='status']").val(status);

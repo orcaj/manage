@@ -54,7 +54,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3">n°</label>
                                                         <div class="col-md-9">
-                                                            <input type="number" id="number" class="form-control border-primary" placeholder="n°" min="10000" max="99999" name="number" required data-validation-required-message="This field is required">
+                                                            <input type="number" id="number" class="form-control border-primary" placeholder="n°"name="number" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -85,7 +85,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput6" required data-validation-required-message="This field is required">CPF / CNPJ</label>
                                                         <div class="col-md-9">
-                                                            <input class="form-control border-primary" type="text" placeholder="CPF / CNPJ" id="cpf_cnpj" minlength="14" maxlength="14" pattern="[0-9]+" name="cpf_cnpj" title="Please input only 14 number" required data-validation-required-message="This field is required">
+                                                            <input class="form-control border-primary" type="text" placeholder="CPF / CNPJ" id="cpf_cnpj"pattern="[0-9]+" name="cpf_cnpj" title="Please input only 14 number" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
 

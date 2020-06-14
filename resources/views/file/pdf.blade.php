@@ -67,8 +67,8 @@
         <div>
             <table>
                 <tr>
-                    <td><h4>COMPROVANTE DE ENTRADA – OS N ° MC 00000{{$result->id}}</h4></td>
-                    <td>Hora {{date('h:i')}} &nbsp Data: {{date('d/m/Y')}}</td>
+                    <td><h4>COMPROVANTE DE ENTRADA – OS N °  00000{{$result->id}}</h4></td>
+                    <td>Hora {{date('h:i')}}  Data: {{date('d/m/Y')}}</td>
                 </tr>
             </table>
         </div>
@@ -107,7 +107,7 @@
                 @if($result->optional == 1)
                 <tr>
                     <td>Em Garantia: Sim</td>
-                    <td>Data: {{$result->purchase_date}} </td>
+                    <td>Data: {{  date('d/m/Y',strtotime($result->purchase_date))}} </td>
                     <td> NF: {{$result->numeric_digits}}</td>
                     <td>Loja: {{$result->store}}</td>
                 </tr>
@@ -131,7 +131,7 @@
         <div>
             <table>
                 <tr>
-                    <td>Data de Entrada: {{date('m/d/Y')}} </td>
+                    <td>Data de Entrada: {{date('d/m/Y')}} </td>
                     <td>Hora: {{date('h:i')}} </td>
                     <td>Visto: TV Sales</td>
                 </tr>
@@ -163,7 +163,7 @@
         <div>
             <table>
                 <tr>
-                    <td><h4>COMPROVANTE DE ENTRADA – OS N ° MC 00000{{$result->id}}</h4></td>
+                    <td><h4>COMPROVANTE DE ENTRADA – OS N °  00000{{$result->id}}</h4></td>
                     <td>Hora {{date('h:i')}} &nbsp Data: {{date('d/m/Y')}}</td>
                 </tr>
             </table>
@@ -203,7 +203,7 @@
                 @if($result->optional == 1)
                 <tr>
                     <td>Em Garantia: Sim</td>
-                    <td>Data: {{$result->purchase_date}} </td>
+                    <td>Data: {{  date('d/m/Y',strtotime($result->purchase_date))}} </td>
                     <td> NF: {{$result->numeric_digits}}</td>
                     <td>Loja: {{$result->store}}</td>
                 </tr>
@@ -227,7 +227,7 @@
         <div>
             <table>
                 <tr>
-                    <td>Data de Entrada: {{date('m/d/Y')}} </td>
+                    <td>Data de Entrada: {{date('d/m/Y')}} </td>
                     <td>Hora: {{date('h:i')}} </td>
                     <td>Visto: TV Sales</td>
                 </tr>

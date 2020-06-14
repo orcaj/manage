@@ -62,10 +62,10 @@
                                                     <td>{{$value->store}}</td>
                                                     <td>{{$value->status}}</td>
                                                     <td>
-                                                    <form action="{{ route('product.destroy', $value) }}" method="post" id="userDelf{{$value->id}}">
+                                                    <form action="{{ route('admin-product.destroy', $value) }}" method="post" id="userDelf{{$value->id}}">
                                                         @csrf
                                                         @method('delete')
-                                                        <a href="{{route('product.edit', $value->id)}}"><i class="feather icon-edit-2"></i></a>
+                                                        <a href="{{route('admin-product.edit', $value->id)}}"><i class="feather icon-edit-2"></i></a>
                                                         <a class="text-danger" data-toggle="modal" data-target=""><i  onclick="confirm('{{ __("Are you sure you want to delete it???") }}') ? deleteUser({{$value->id}}) : ' '" class="feather icon-trash-2"></i></a>
 
                                                         <a href="{{route('pdf-download',$value->id)}}"><i class="fa fa-download"></i></a>
