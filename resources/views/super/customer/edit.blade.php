@@ -53,7 +53,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput3">n°</label>
+                                                        <label class="col-md-3 label-control" for="userinput3">CEP</label>
                                                         <div class="col-md-9">
                                                             <input type="number" value="{{$result->number}}"  id="number" class="form-control border-primary"  placeholder="n°" name="number" required data-validation-required-message="This field is required">
                                                         </div>

@@ -206,6 +206,7 @@
 </div>
 <!-- END: Content-->
 <script>
+    
     customer_id="<?php echo $result->customer_id; ?>";
     console.log("fff",customer_id);
     status="<?php echo $result->status; ?>";
