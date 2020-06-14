@@ -76,12 +76,12 @@
             <table>
                 <tr>
                     <td>Cliente: {{$result->customer->username}}</td>
-                    <td>Contato: Maria </td>
+                    <td></td>
                     <td> {{$result->customer->phone_number}} </td>
                 </tr>
                 <tr>
                     <td>Endereço: {{$result->customer->address}}</td>
-                    <td>Bairro: Criméia  </td>
+                    <td> </td>
                     <td>  Cidade: {{$result->customer->city}}  </td>
                 </tr>
                 <tr>
@@ -172,12 +172,12 @@
             <table>
                 <tr>
                     <td>Cliente: {{$result->customer->username}}</td>
-                    <td>Contato: Maria </td>
+                    <td> </td>
                     <td> {{$result->customer->phone_number}} </td>
                 </tr>
                 <tr>
                     <td>Endereço: {{$result->customer->address}}</td>
-                    <td>Bairro: Criméia  </td>
+                    <td> </td>
                     <td>  Cidade: {{$result->customer->city}}  </td>
                 </tr>
                 <tr>
