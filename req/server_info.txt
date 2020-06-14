@@ -27,6 +27,20 @@ manage123<>?
 
 
 
+
+
+
+
+
+
+
+admin:
+email: assistencia@tvsales.com.br
+User Avatar
+password: BeFw4axsa#A*%5&n%B4M
+
+
+
 2 - https://virtualcomponentes.com.br/tvsales/dat
 
 

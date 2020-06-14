@@ -201,7 +201,7 @@
                                                 <td class="text-truncate">{{$key+1}}</td>
                                                 <td class="text-center">
                                                         @foreach($value->image as $img)
-                                                            <img src="{{asset($img->photo)}}" width="50">
+                                                            <img src="{{asset('public/'.$img->photo)}}" width="50">
                                                         @endforeach
                                                 </td>
                                                 <td>{{$value->serial_number}}</td>
