@@ -104,6 +104,15 @@
                                                     </div>
                                                 </div>
 
+                                                <div class="col-md-4">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput4">accesorios</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" value="{{$result->access}}"   id="access" class="form-control border-primary" placeholder="accesorios" name="access" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
 
                                             <div class="row">

@@ -67,7 +67,7 @@
         <div>
             <table>
                 <tr>
-                    <td><h4>COMPROVANTE DE ENTRADA – OS N °  00000{{$result->id}}</h4></td>
+                    <td><h4>COMPROVANTE DE ENTRADA – OS N °  00{{$result->sn}}</h4></td>
                     <td>Hora {{date('h:i')}}  Data: {{date('d/m/Y')}}</td>
                 </tr>
             </table>
@@ -86,7 +86,7 @@
                 </tr>
                 <tr>
                     <td>CPF/CNPJ:{{$result->customer->cpf_cnpj}}     </td>
-                    <td>UF: MG      </td>
+                    <td>UF: {{$result->customer->uf}}      </td>
                     <td>    CEP:  {{$result->customer->number}} </td>
                 </tr>
             </table>
@@ -101,7 +101,7 @@
                     <td> Modelo:  {{$result->model}}  </td>
                 </tr>
                 <tr>
-                    <td colspan="3">Acessórios: Embalagem</td>
+                    <td colspan="3">Acessórios: {{$result->access}}</td>
                     <td>Série: {{$result->serial_number}} </td>
                 </tr>
                 @if($result->optional == 1)
@@ -163,7 +163,7 @@
         <div>
             <table>
                 <tr>
-                    <td><h4>COMPROVANTE DE ENTRADA – OS N °  00000{{$result->id}}</h4></td>
+                    <td><h4>COMPROVANTE DE ENTRADA – OS N °  00{{$result->sn}}</h4></td>
                     <td>Hora {{date('h:i')}} &nbsp Data: {{date('d/m/Y')}}</td>
                 </tr>
             </table>
@@ -182,7 +182,7 @@
                 </tr>
                 <tr>
                     <td>CPF/CNPJ:{{$result->customer->cpf_cnpj}}     </td>
-                    <td>UF: MG      </td>
+                    <td>UF: {{$result->customer->uf}}        </td>
                     <td>    CEP:  {{$result->customer->number}} </td>
                 </tr>
             </table>
@@ -197,7 +197,7 @@
                     <td> Modelo:  {{$result->model}}  </td>
                 </tr>
                 <tr>
-                    <td colspan="3">Acessórios: Embalagem</td>
+                    <td colspan="3">Acessórios: {{$result->customer->uf}}  </td>
                     <td>Série: {{$result->serial_number}} </td>
                 </tr>
                 @if($result->optional == 1)

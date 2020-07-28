@@ -43,6 +43,13 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product=new Product();
+
+        $max_id=Product::max('id');
+        $sn=24200+($max_id);
+        $product->sn=$sn;
+        $product->access=$request->access;
+
+
         $product->customer_id=$request->customer_id;
         $product->status=$request->status;
         $product->equipament=$request->equipament;
@@ -127,7 +134,8 @@ class ProductController extends Controller
         $product->description=$request->description;
         $product->observations=$request->observations;
         $product->subsidiary_id=auth()->user()->id;
-
+        $product->access=$request->access;
+        
         if($request->optional){
             $product->optional=1;
             $product->numeric_digits=$request->numeric_digits;

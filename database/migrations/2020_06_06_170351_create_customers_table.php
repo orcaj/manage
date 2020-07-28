@@ -19,6 +19,7 @@ class CreateCustomersTable extends Migration
             $table->integer('subsidiary_id');
             $table->string('username');
             $table->string('address');
+            $table->string('uf');
             $table->string('phone_number');
             $table->integer('number');
             $table->string('city');

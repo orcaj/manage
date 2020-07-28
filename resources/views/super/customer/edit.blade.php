@@ -59,6 +59,17 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput3">UF</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="uf" class="form-control border-primary" placeholder="UF" name="uf" required  value="{{$result->uf}}" data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
                                                 <div class="col-md-6">
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput4">Cidade</label>

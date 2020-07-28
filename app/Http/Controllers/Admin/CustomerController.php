@@ -77,6 +77,7 @@ class CustomerController extends Controller
         $customer=Customer::Find($id);
         $customer->username=$request->username;
         $customer->address=$request->address;
+        $customer->uf=$request->uf;
         $customer->phone_number=$request->phone_number;
         $customer->number=$request->number;
         $customer->city=$request->city;

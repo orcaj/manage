@@ -49,6 +49,7 @@ class CustomerController extends Controller
         $customer->address=$request->address;
         $customer->phone_number=$request->phone_number;
         $customer->number=$request->number;
+        $customer->uf=$request->uf;
         $customer->city=$request->city;
         $customer->cpf_cnpj=$request->cpf_cnpj;
         $customer->subsidiary_id=auth()->user()->id;
@@ -93,6 +94,7 @@ class CustomerController extends Controller
         $customer->username=$request->username;
         $customer->address=$request->address;
         $customer->phone_number=$request->phone_number;
+        $customer->uf=$request->uf;
         $customer->number=$request->number;
         $customer->city=$request->city;
         $customer->cpf_cnpj=$request->cpf_cnpj;

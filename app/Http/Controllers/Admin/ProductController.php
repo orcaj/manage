@@ -102,6 +102,7 @@ class ProductController extends Controller
         $product->description=$request->description;
         $product->observations=$request->observations;
         $product->subsidiary_id=auth()->user()->id;
+        $product->access=$request->access;
 
         $subsidiary_id=Customer::Find($request->customer_id)->subsidiary_id;
         $product->subsidiary_id=$subsidiary_id;

@@ -9,6 +9,7 @@ $factory->define(Customer::class, function (Faker $faker) {
     return [
         'subsidiary_id' => $faker->numberBetween(2,4),
         'username' => $faker->name(),
+        'uf' => 'uf',
         'address' => $faker->address(),
         'phone_number'=>$faker->e164PhoneNumber(),
         'number'=>$faker->numberBetween(10000, 99999),

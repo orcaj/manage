@@ -54,10 +54,21 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3">CEP</label>
                                                         <div class="col-md-9">
-                                                            <input type="number" id="number" class="form-control border-primary" placeholder="n°"name="number" required data-validation-required-message="This field is required">
+                                                            <input type="number" id="number" class="form-control border-primary" placeholder="CEP" name="number" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" for="userinput3">UF</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="uf" class="form-control border-primary" placeholder="UF" name="uf" required data-validation-required-message="This field is required">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
                                                 <div class="col-md-6">
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput4">Cidade</label>
