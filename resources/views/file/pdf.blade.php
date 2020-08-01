@@ -254,6 +254,17 @@
             </table>
         </div>
 
+        <div>
+            <table>
+                <tr>
+                    <td><h4>00{{$result->sn}}</h4></td>
+                    <td><h4>00{{$result->sn}}</h4></td>
+                    <td><h4>00{{$result->sn}}</h4></td>
+                    <td><h4>00{{$result->sn}}</h4></td>
+                </tr>
+            </table>
+        </div>
+
 
 
 
