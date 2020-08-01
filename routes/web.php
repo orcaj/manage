@@ -48,8 +48,6 @@ Route::group(['middleware' => ['auth']], function(){
 
     Route::get('pdf-donwload/{id}', 'HomeController@pdf')->name('pdf-download');
 
-
-
     Route::get('/home', 'HomeController@index')->name('home');
 
     Route::resource('customer', 'CustomerController');
@@ -59,12 +57,13 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('sub-index', 'HomeController@sub_index')->name('sub.index');
 
 
+    Route::resource('admin-subsidiary', 'Admin\SubsidiaryController');
+    
 
     Route::group(['middleware' => ['super']], function(){
 
         Route::get('super-index', 'Admin\HomeController@index')->name('super.index');
 
-        Route::resource('admin-subsidiary', 'Admin\SubsidiaryController');
 
         Route::resource('admin-customer', 'Admin\CustomerController');
 

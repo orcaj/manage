@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Customer;
 use App\Product;
+use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -114,5 +115,10 @@ class CustomerController extends Controller
 
         Customer::destroy($customer->id);
         return redirect()->back()->with('success','delete_success');
+    }
+
+    public function profile($id){
+        $data['result']=User::Find($id);
+        return view('sub.profile', $data);
     }
 }

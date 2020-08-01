@@ -77,6 +77,8 @@ class SubsidiaryController extends Controller
         $subside=User::Find($id);
         $subside->name=$request->name;
         $subside->email=$request->email;
+        $subside->address=$request->address;
+        $subside->phone=$request->phone;
         $subside->save();
         return redirect()->route('admin-subsidiary.index')->with('success','update_success');
     }
