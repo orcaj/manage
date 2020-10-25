@@ -80,7 +80,7 @@ class SubsidiaryController extends Controller
         $subside->address=$request->address;
         $subside->phone=$request->phone;
         $subside->save();
-        return redirect()->route('admin-subsidiary.index')->with('success','update_success');
+        return redirect()->back()->with('success','update_success');
     }
 
     /**

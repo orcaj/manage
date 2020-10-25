@@ -107,9 +107,9 @@
 
                                                 <div class="col-md-4">
                                                     <div class="form-group row">
-                                                        <label class="col-md-3 label-control" for="userinput4">accesorios</label>
+                                                        <label class="col-md-3 label-control" for="userinput4">acessórios</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" id="access" class="form-control border-primary" placeholder="accesorios" name="access" required data-validation-required-message="This field is required">
+                                                            <input type="text" id="access" class="form-control border-primary" placeholder="acessórios" name="access" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>

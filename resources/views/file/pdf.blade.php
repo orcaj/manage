@@ -164,7 +164,7 @@
             <table>
                 <tr>
                     <td><h4>COMPROVANTE DE ENTRADA – OS N °  00{{$result->sn}}</h4></td>
-                    <td>Hora {{date('h:i')}} &nbsp Data: {{date('d/m/Y')}}</td>
+                    <td>Hora {{date('h:i')}} &nbsp; Data: {{date('d/m/Y')}}</td>
                 </tr>
             </table>
         </div>
@@ -197,7 +197,7 @@
                     <td> Modelo:  {{$result->model}}  </td>
                 </tr>
                 <tr>
-                    <td colspan="3">Acessórios: {{$result->customer->uf}}  </td>
+                    <td colspan="3">Acessórios: {{$result->access}}  </td>
                     <td>Série: {{$result->serial_number}} </td>
                 </tr>
                 @if($result->optional == 1)
