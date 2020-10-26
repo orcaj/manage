@@ -57,7 +57,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('sub-index', 'HomeController@sub_index')->name('sub.index');
 
     Route::patch('profile_update/{id}', 'HomeController@profile_update')->name('profile_update');    
-    Route::get('profile_edit/{id}', 'HomeController@profile_edit')->name('profile_edit');    
+    Route::get('profile_edit', 'HomeController@profile_edit')->name('profile_edit');    
     
 
     Route::group(['middleware' => ['super']], function(){

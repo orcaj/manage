@@ -194,7 +194,7 @@
 
                     @if(auth()->user()->role =='owner' )
                     
-                     <a class="dropdown-item" href="{{route('profile_edit', auth()->user()->id)}}"><i class="feather icon-user"></i> Edit Profile</a>
+                     <a class="dropdown-item" href="{{route('profile_edit')}}"><i class="feather icon-user"></i> Edit Profile</a>
                      @endif
 
                  <!--     <a class="dropdown-item" href="app-email.html"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="user-cards.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="feather icon-message-square"></i> Chats</a> -->

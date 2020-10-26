@@ -82,6 +82,7 @@ class HomeController extends Controller
 
     public function profile_edit($id)
     {
+        $id=auth()->user()->id;
         $data['subside']=User::Find($id);
         return view('sub.profile', $data);
     }
