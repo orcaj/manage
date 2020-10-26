@@ -80,7 +80,7 @@ class HomeController extends Controller
         return "success";
     }
 
-    public function profile_edit($id)
+    public function profile_edit()
     {
         $id=auth()->user()->id;
         $data['subside']=User::Find($id);
