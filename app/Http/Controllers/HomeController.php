@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Customer;
 use App\Product;
 use PDF;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -77,6 +78,30 @@ class HomeController extends Controller
             $value->save();
         }
         return "success";
+    }
+
+    public function profile_edit($id)
+    {
+        $data['subside']=User::Find($id);
+        return view('sub.profile', $data);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function profile_update(Request $request, $id)
+    {
+        $subside=User::Find($id);
+        $subside->name=$request->name;
+        $subside->email=$request->email;
+        $subside->address=$request->address;
+        $subside->phone=$request->phone;
+        $subside->save();
+        return redirect()->back()->with('success','update_success');
     }
 
 }

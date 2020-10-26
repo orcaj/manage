@@ -25,7 +25,7 @@
                             <div class="card-content collpase show">
                                 <div class="card-body">
                                     
-                                    <form class="form form-horizontal" method="post" action="{{route('admin-subsidiary.update', $result->id)}}" enctype="multipart/form-data">
+                                    <form class="form form-horizontal" method="post" action="{{route('profile_update', $subside->id)}}" enctype="multipart/form-data">
                                         @csrf
                                         @method('patch')
                                         <div class="form-body">
@@ -36,7 +36,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput3">Owner Name</label>
                                                         <div class="col-md-9">
-                                                            <input type="text" value="{{$result->name}}"  id="name"  class="form-control border-primary" placeholder="Owner Name" name="name" required data-validation-required-message="This field is required">
+                                                            <input type="text" value="{{$subside->name}}"  id="name"  class="form-control border-primary" placeholder="Owner Name" name="name" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -44,7 +44,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput4">Email</label>
                                                         <div class="col-md-9">
-                                                            <input type="email" value="{{$result->email}}" id="email" max="100" class="form-control border-primary" placeholder="Email" name="email" required data-validation-required-message="This field is required">
+                                                            <input type="email" value="{{$subside->email}}" id="email" max="100" class="form-control border-primary" placeholder="Email" name="email" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -54,7 +54,7 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput4">Address</label>
                                                         <div class="col-md-9">
-                                                            <input type="email" value="{{$result->address}}" id="email" max="100" class="form-control border-primary" placeholder="Email" name="email" required data-validation-required-message="This field is required">
+                                                            <input type="text" value="{{$subside->address}}" id="address" max="100" class="form-control border-primary" placeholder="address" name="address" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -63,10 +63,12 @@
                                                     <div class="form-group row">
                                                         <label class="col-md-3 label-control" for="userinput4">Phone Number</label>
                                                         <div class="col-md-9">
-                                                            <input type="email" value="{{$result->phone}}" id="email" max="100" class="form-control border-primary" placeholder="Email" name="email" required data-validation-required-message="This field is required">
+                                                            <input type="text" value="{{$subside->phone}}" id="phone" max="100" class="form-control border-primary" placeholder="phone" name="phone" required data-validation-required-message="This field is required">
                                                         </div>
                                                     </div>
                                                 </div>
+
+
                                             </div>
                                           
                                         </div>
