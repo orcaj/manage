@@ -160,7 +160,7 @@
 
 
         <hr style="color: black; height: 2px; background: black; ">
-        <div>
+        <div style="margin-top: 15px;">
             <table>
                 <tr>
                     <td><h4>COMPROVANTE DE ENTRADA – OS N °  00{{$result->sn}}</h4></td>
@@ -254,7 +254,7 @@
             </table>
         </div>
 
-        <div>
+        <div style="margin-top: 10px;">
             <table>
                 <tr>
                     <td><h4>00{{$result->sn}}</h4></td>

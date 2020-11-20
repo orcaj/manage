@@ -45,7 +45,7 @@ class ProductController extends Controller
         $product=new Product();
 
         $max_id=Product::max('id');
-        $sn=24200+($max_id);
+        $sn=24270+($max_id);
         $product->sn=$sn;
         $product->access=$request->access;
 
@@ -75,16 +75,20 @@ class ProductController extends Controller
 
         $product->save();
 
-        $countfiles =count($request->photo);
+        if($request->photo){
+            $countfiles =count($request->photo);
 
-        for($i=0; $i<$countfiles; $i++){
-            $filename = time().rand(100, 999).".".$request->photo[$i]->getClientOriginalExtension();
-            $request->photo[$i]->move(public_path('upload'), $filename);
-            $new_image=new Image();
-            $new_image->product_id=$product->id;
-            $new_image->photo='upload/'.$filename;
-            $new_image->save();
+            for($i=0; $i<$countfiles; $i++){
+                $filename = time().rand(100, 999).".".$request->photo[$i]->getClientOriginalExtension();
+                $request->photo[$i]->move(public_path('upload'), $filename);
+                $new_image=new Image();
+                $new_image->product_id=$product->id;
+                $new_image->photo='upload/'.$filename;
+                $new_image->save();
+            }
         }
+
+        
 
         return redirect()->route('product.index')->with('success','add_success');
     }

@@ -140,7 +140,7 @@
                                             <div class="row">
                                                 <label class="col-md-2 label-control" for="userinput5">Área para inserção de fotos</label>
                                                 <div class="col-md-10">
-                                                    <input type="file" class="custom-file-input form-group" id="photo" name="photo[]" required data-validation-required-message="This field is required" multiple="">
+                                                    <input type="file" class="custom-file-input form-group" id="photo" name="photo[]" data-validation-required-message="This field is required" multiple="">
                                                     <label class="custom-file-label" for="inputGroupFile01" >Área para inserção de fotos</label>
                                                 </div>
                                             </div>
