@@ -53,7 +53,7 @@ class HomeController extends Controller
         $result=Product::FindOrFail($id);
         $pdf = PDF::loadView('file/pdf',compact('result'))->setPaper('a4');
         
-        // return view('file.pdf', compact('result'));
+        return view('file.pdf', compact('result'));
         return $pdf->download('pdf.pdf');
     }
 

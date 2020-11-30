@@ -1,11 +1,3 @@
-https://br226.hostgator.com.br:2083/logout/?locale=pt_br
-192.185.215.161
-
-User: virtu817
-Pass: Myb2dj%ZVZT*V8z$Wr
-
-
-
 		
 https://br226.hostgator.com.br:2083/logout/?locale=pt_br
 
@@ -50,28 +42,3 @@ password: BeFw4axsa#A*%5&n%B4M
 
 
 2 - https://virtualcomponentes.com.br/tvsales/dat
-
-
-
-
----new requ----
-These topics are required to complete the customer's registration form (individually).
-- Nome (Name)
-- Endereço (Address)
-- n° (number)
-- Cidade (City)
-- Telefone (Fone)
-- CPF / CNPJ (space for up to 14 numeric digits)
-- Aparelho  (Equipament)
-- Marca (brand)
-- Modelo (model)
-- Número de Série (serial number)
-- Problema relatado (Space for describing the equipment defect)
-- Orçamento (Space for budget description).
-- Observações (Space for description of observations)
-- Área para inserção de fotos (Area for inserting photos of the equipment)
-
-Option "Em garantia" (yes or no) will leave editable fields:
-- NF (space numeric digits)
-- Data de Compra (Purchase date)
-- Loja (Store)
