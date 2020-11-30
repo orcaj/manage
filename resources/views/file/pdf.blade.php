@@ -257,10 +257,10 @@
         <div style="margin-top: 10px;">
             <table>
                 <tr>
-                    <td><h4>00{{$result->sn}}</h4></td>
-                    <td><h4>00{{$result->sn}}</h4></td>
-                    <td><h4>00{{$result->sn}}</h4></td>
-                    <td><h4>00{{$result->sn}}</h4></td>
+                    <td><h4 style="font-size: 36px;">00{{$result->sn}}</h4></td>
+                    <td><h4 style="font-size: 36px;">00{{$result->sn}}</h4></td>
+                    <td><h4 style="font-size: 36px;">00{{$result->sn}}</h4></td>
+                    <td><h4 style="font-size: 36px;">00{{$result->sn}}</h4></td>
                 </tr>
             </table>
         </div>
