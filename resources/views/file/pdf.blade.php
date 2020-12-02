@@ -9,7 +9,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
      <style type="text/css">
-        @page { margin-top: 19px; }
+        @page { margin-top: 14px; }
          .head {
              display: flex;
              justify-content: space-between;
@@ -53,7 +53,7 @@
              margin-bottom: 0px;
          }
 
-         .unicode span{
+         .unicode > span{
              margin-right: 57px;
          }
      </style>
@@ -272,8 +272,17 @@
              </table>
          </div>
 
-         <div style="margin-top: 45px; font-size: 25px;" class="unicode">
-             <span>00{{$result->sn}}</span><span>00{{$result->sn}}</span><span>00{{$result->sn}}</span><span>00{{$result->sn}}</span>
+         <div class="unicode" style="margin-top: 35px; font-size: 25px; display:flex">
+            <table style="width: 40%;">
+                <tbody>
+                    <tr>
+                        <td style="padding-right: 57px;">00{{$result->sn}}</td>
+                        <td style="padding-right: 57px;">00{{$result->sn}}</td>
+                        <td style="padding-right: 57px;">00{{$result->sn}}</td>
+                        <td style="padding-right: 57px;">00{{$result->sn}}</td>
+                    </tr>
+                </tbody>
+            </table>
          </div>
      </div>
  </body>
