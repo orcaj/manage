@@ -52,6 +52,10 @@
          p {
              margin-bottom: 0px;
          }
+
+         .unicode span{
+             margin-right: 57px;
+         }
      </style>
  </head>
 
@@ -268,11 +272,8 @@
              </table>
          </div>
 
-         <div style="margin-top: 45px; font-size: 25px;">
-             <span>00{{$result->sn}}</span>
-             <span>00{{$result->sn}}</span>
-             <span>00{{$result->sn}}</span>
-             <span>00{{$result->sn}}</span>
+         <div style="margin-top: 45px; font-size: 25px;" class="unicode">
+             <span>00{{$result->sn}}</span><span>00{{$result->sn}}</span><span>00{{$result->sn}}</span><span>00{{$result->sn}}</span>
          </div>
      </div>
  </body>
